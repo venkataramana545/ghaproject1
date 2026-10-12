@@ -1,0 +1,17 @@
+name: second workflow bro
+on:
+    push:
+        branches:
+            - main
+jobs:
+    first-job-bro:
+        runs-on: ubuntu-latest
+        steps:
+            - name: scoop
+              run : 
+                echo "hello bro"
+            - name: flick
+              run: |
+                echo "|->this symbol helps to write multiple echos"
+                echo "now you know right"
+                echo "done successfully"
